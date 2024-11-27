@@ -1,2 +1,6 @@
 ---
-# handlers file for knoxweb
+# handlers/main.yml
+- name: Restart nginx
+  service:
+    name: nginx
+    state: restarted
